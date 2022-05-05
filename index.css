@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #f3f3f3;
+  background-color: #fff;
 }
 
 .header {
@@ -20,7 +20,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 15px 25px;
-  background-image: url("./img/waves.svg");
+  background: #dc5b61;
 }
 
 .header .user-profile img {
@@ -61,127 +61,248 @@ body {
   margin-top: 10px;
 }
 
-.card-container {
-  margin-top: 10px;
-  display: block;
+.main-cardcontainer {
+  margin-top: 15px;
 }
 
-.card-container .card-box-shaydo {
-  -webkit-box-shadow: 0px 0px 1px 0px;
-          box-shadow: 0px 0px 1px 0px;
-  padding: 10px;
+.main-cardcontainer .main-card {
+  -webkit-box-shadow: 1px 1px 10px 6px #f3f3f3;
+          box-shadow: 1px 1px 10px 6px #f3f3f3;
+  padding: 15px;
 }
 
-.card-container .card {
+.main-cardcontainer .main-card .card .blood-request {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 8px 0 0;
 }
 
-.card-container .card h4 {
-  font-size: 1.5rem;
+.main-cardcontainer .main-card .card .blood-request h3 {
+  font-weight: 900;
 }
 
-.card-container .card img {
+.main-cardcontainer .main-card .card .blood-request h3 img {
   max-width: 20px;
 }
 
-.card-container .card .reciver-img-profile {
+.main-cardcontainer .main-card .card .blood-request .aps img {
+  width: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 1px 0px;
+          box-shadow: 0px 0px 1px 0px;
+  padding: 2px;
+  margin: 0px 1px 0 15px;
+}
+
+.main-cardcontainer .main-card .card .Donate-map {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 7px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
 }
 
-.card-container .card .reciver-img-profile img {
-  max-width: 15px;
-  padding: 4px;
-  -webkit-box-shadow: 0px 0px 1px 0px;
-          box-shadow: 0px 0px 1px 0px;
-}
-
-.card-container .btn button {
-  color: #fff;
-  border: navajowhite;
-  background-color: #dc5b61;
-  border-radius: 10px;
-  padding: 5px 25px;
-  margin-top: 5px;
-}
-
-.card-container .card-text {
+.main-cardcontainer .main-card .card .Donate-map h6 img {
+  max-width: 20px;
   margin-top: 10px;
 }
 
-.card-container .card-text h5 {
-  color: black;
-  line-height: 1.5;
+.main-cardcontainer .main-card .card .Donate-map button {
+  border: none;
+  border: none;
+  padding: 4px 25px;
+  border-radius: 10px;
+  background-color: #dc5b61;
+  margin-top: 10px;
 }
 
-.card-container .card-text span {
+.main-cardcontainer .main-card .card .btn button {
+  border: none;
+  padding: 4px 15px;
+  border-radius: 10px;
+  background-color: #dc5b61;
+  margin-top: 10px;
+}
+
+.main-cardcontainer .main-card .card .twocard-text {
+  margin-top: 10px;
+}
+
+.main-cardcontainer .main-card .card .twocard-text h5 span {
+  font-size: 0.6rem;
   font-weight: 400;
 }
 
-.card-container .second-text {
+.main-cardcontainer .main-card .card .twocard-text .blood-needs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: center;
-  padding: 0 20px;
+  margin-top: 7px;
 }
 
-.card-container .second-text .loaction-manager {
+.main-cardcontainer .main-card .card .twocard-text .blood-needs span {
+  font-weight: 300;
+  font-size: 0.7rem;
+  margin-right: 18px;
+}
+
+header nav {
+  width: 95%;
+  margin: 10px;
+  position: absolute;
+  bottom: 5px;
+  -webkit-box-shadow: 1px 1px 10px 6px #f3f3f3;
+          box-shadow: 1px 1px 10px 6px #f3f3f3;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+header nav .Buttom-navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+}
+
+header nav .Buttom-navbar img {
+  max-width: 30px;
+  -webkit-filter: grayscale(1) invert(50%);
+          filter: grayscale(1) invert(50%);
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 16%;
+}
+
+.main-container .main-form {
+  -webkit-box-shadow: 1px 1px 7px 3px #f9aaaa;
+          box-shadow: 1px 1px 7px 3px #f9aaaa;
+  border-radius: 10px;
+  max-width: 40%;
+  padding: 30px 20px;
+}
+
+.main-container .main-form form h2 {
   text-align: center;
+  margin: 15px;
+}
+
+.main-container .main-form form .inp-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  -webkit-box-shadow: 1px 1px 10px 2px #fa8787;
+          box-shadow: 1px 1px 10px 2px #fa8787;
+  border-radius: 4px;
+  margin: 2px;
+  padding: 1px;
+  margin: 10px 0px 30px 0px;
+}
+
+.main-container .main-form form .inp-icon img {
+  max-width: 20px;
+  padding: 4px;
+}
+
+.main-container .main-form form .inp-icon input {
+  outline: none;
+  border: none;
+}
+
+.main-container .main-form form .login-btn button {
+  margin: 2px 0px 0px 55px;
+  padding: 5px 25px;
+  border: none;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 10px 2px #fa8787;
+          box-shadow: 1px 1px 10px 2px #fa8787;
+}
+
+.registration-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+}
+
+.registration-page form {
+  -webkit-box-shadow: 1px 1px 9px 1px #dbc8c8;
+          box-shadow: 1px 1px 9px 1px #dbc8c8;
+  border-radius: 10px;
+  padding: 20px 10px 50px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  text-align: center;
+  max-width: 50%;
+  gap: 20px;
+  padding: 50px;
 }
 
-.card-container .second-text .loaction-manager .Dr-name h4 {
-  font-weight: 300;
-  font-size: .8rem;
+.registration-page form h2 {
+  color: black;
 }
 
-.card-container .second-text .loaction-manager .location {
-  margin: 5px 0 0 -20px;
+.registration-page form .reg-input {
+  -webkit-box-shadow: 1px 1px 10px 4px #f2e9e9;
+          box-shadow: 1px 1px 10px 4px #f2e9e9;
+  border-radius: 5px;
+  padding: 5px;
 }
 
-.card-container .second-text .loaction-manager .location img {
-  max-width: 20px;
+.registration-page form .reg-input img {
+  max-width: 17px;
 }
 
-.card-container .second-text .btn-donate h6 {
-  font-size: .5rem;
-  text-align: start;
+.registration-page form .reg-input input {
+  margin-left: 10px;
+  outline: none;
+  border: none;
 }
 
-.card-container .second-text .btn-donate button {
-  border: navajowhite;
-  margin-top: 10px;
-  border-radius: 10px;
-  background-color: #dc5b61;
-  padding: 5px 30px;
+.registration-page form .reg-input select {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0px 1px 0px 0px;
+          box-shadow: 0px 1px 0px 0px;
 }
 /*# sourceMappingURL=index.css.map */
